@@ -1,0 +1,216 @@
+import { WordEntry } from './types';
+
+export const words: WordEntry[] = [
+  // ── Animals ──────────────────────────────────────────────────────────────
+  { word: 'Lion',        category: 'Animals',    difficulty: 'easy' },
+  { word: 'Tiger',       category: 'Animals',    difficulty: 'easy' },
+  { word: 'Elephant',    category: 'Animals',    difficulty: 'easy' },
+  { word: 'Penguin',     category: 'Animals',    difficulty: 'easy' },
+  { word: 'Giraffe',     category: 'Animals',    difficulty: 'easy' },
+  { word: 'Crocodile',   category: 'Animals',    difficulty: 'easy' },
+  { word: 'Dolphin',     category: 'Animals',    difficulty: 'easy' },
+  { word: 'Kangaroo',    category: 'Animals',    difficulty: 'easy' },
+  { word: 'Cheetah',     category: 'Animals',    difficulty: 'medium' },
+  { word: 'Flamingo',    category: 'Animals',    difficulty: 'medium' },
+  { word: 'Octopus',     category: 'Animals',    difficulty: 'medium' },
+  { word: 'Platypus',    category: 'Animals',    difficulty: 'hard' },
+  { word: 'Chameleon',   category: 'Animals',    difficulty: 'hard' },
+  { word: 'Narwhal',     category: 'Animals',    difficulty: 'hard' },
+
+  // ── Fruits ───────────────────────────────────────────────────────────────
+  { word: 'Apple',       category: 'Fruits',     difficulty: 'easy' },
+  { word: 'Banana',      category: 'Fruits',     difficulty: 'easy' },
+  { word: 'Orange',      category: 'Fruits',     difficulty: 'easy' },
+  { word: 'Mango',       category: 'Fruits',     difficulty: 'easy' },
+  { word: 'Pineapple',   category: 'Fruits',     difficulty: 'easy' },
+  { word: 'Strawberry',  category: 'Fruits',     difficulty: 'easy' },
+  { word: 'Watermelon',  category: 'Fruits',     difficulty: 'easy' },
+  { word: 'Grapes',      category: 'Fruits',     difficulty: 'easy' },
+  { word: 'Blueberry',   category: 'Fruits',     difficulty: 'medium' },
+  { word: 'Pomegranate', category: 'Fruits',     difficulty: 'medium' },
+  { word: 'Papaya',      category: 'Fruits',     difficulty: 'medium' },
+  { word: 'Durian',      category: 'Fruits',     difficulty: 'hard' },
+  { word: 'Lychee',      category: 'Fruits',     difficulty: 'hard' },
+  { word: 'Dragonfruit', category: 'Fruits',     difficulty: 'hard' },
+
+  // ── Food ─────────────────────────────────────────────────────────────────
+  { word: 'Pizza',       category: 'Food',       difficulty: 'easy' },
+  { word: 'Burger',      category: 'Food',       difficulty: 'easy' },
+  { word: 'Sushi',       category: 'Food',       difficulty: 'easy' },
+  { word: 'Pasta',       category: 'Food',       difficulty: 'easy' },
+  { word: 'Sandwich',    category: 'Food',       difficulty: 'easy' },
+  { word: 'Chocolate',   category: 'Food',       difficulty: 'easy' },
+  { word: 'Pancakes',    category: 'Food',       difficulty: 'easy' },
+  { word: 'Noodles',     category: 'Food',       difficulty: 'easy' },
+  { word: 'Biryani',     category: 'Food',       difficulty: 'medium' },
+  { word: 'Falafel',     category: 'Food',       difficulty: 'medium' },
+  { word: 'Croissant',   category: 'Food',       difficulty: 'medium' },
+  { word: 'Tiramisu',    category: 'Food',       difficulty: 'hard' },
+  { word: 'Pho',         category: 'Food',       difficulty: 'hard' },
+  { word: 'Paella',      category: 'Food',       difficulty: 'hard' },
+
+  // ── Technology ───────────────────────────────────────────────────────────
+  { word: 'Laptop',      category: 'Technology', difficulty: 'easy' },
+  { word: 'Smartphone',  category: 'Technology', difficulty: 'easy' },
+  { word: 'Keyboard',    category: 'Technology', difficulty: 'easy' },
+  { word: 'Camera',      category: 'Technology', difficulty: 'easy' },
+  { word: 'Headphones',  category: 'Technology', difficulty: 'easy' },
+  { word: 'Television',  category: 'Technology', difficulty: 'easy' },
+  { word: 'Microwave',   category: 'Technology', difficulty: 'easy' },
+  { word: 'Robot',       category: 'Technology', difficulty: 'easy' },
+  { word: 'Satellite',   category: 'Technology', difficulty: 'medium' },
+  { word: 'Microscope',  category: 'Technology', difficulty: 'medium' },
+  { word: 'Submarine',   category: 'Technology', difficulty: 'medium' },
+  { word: 'Hologram',    category: 'Technology', difficulty: 'hard' },
+  { word: 'Quantum',     category: 'Technology', difficulty: 'hard' },
+  { word: 'Blockchain',  category: 'Technology', difficulty: 'hard' },
+
+  // ── Sports ───────────────────────────────────────────────────────────────
+  { word: 'Football',    category: 'Sports',     difficulty: 'easy' },
+  { word: 'Basketball',  category: 'Sports',     difficulty: 'easy' },
+  { word: 'Tennis',      category: 'Sports',     difficulty: 'easy' },
+  { word: 'Swimming',    category: 'Sports',     difficulty: 'easy' },
+  { word: 'Cricket',     category: 'Sports',     difficulty: 'easy' },
+  { word: 'Volleyball',  category: 'Sports',     difficulty: 'easy' },
+  { word: 'Boxing',      category: 'Sports',     difficulty: 'easy' },
+  { word: 'Archery',     category: 'Sports',     difficulty: 'medium' },
+  { word: 'Fencing',     category: 'Sports',     difficulty: 'medium' },
+  { word: 'Polo',        category: 'Sports',     difficulty: 'medium' },
+  { word: 'Curling',     category: 'Sports',     difficulty: 'hard' },
+  { word: 'Lacrosse',    category: 'Sports',     difficulty: 'hard' },
+  { word: 'Bobsled',     category: 'Sports',     difficulty: 'hard' },
+
+  // ── Countries ────────────────────────────────────────────────────────────
+  { word: 'Japan',       category: 'Countries',  difficulty: 'easy' },
+  { word: 'Brazil',      category: 'Countries',  difficulty: 'easy' },
+  { word: 'Canada',      category: 'Countries',  difficulty: 'easy' },
+  { word: 'Germany',     category: 'Countries',  difficulty: 'easy' },
+  { word: 'Australia',   category: 'Countries',  difficulty: 'easy' },
+  { word: 'Egypt',       category: 'Countries',  difficulty: 'easy' },
+  { word: 'India',       category: 'Countries',  difficulty: 'easy' },
+  { word: 'Mexico',      category: 'Countries',  difficulty: 'easy' },
+  { word: 'Argentina',   category: 'Countries',  difficulty: 'medium' },
+  { word: 'Sweden',      category: 'Countries',  difficulty: 'medium' },
+  { word: 'Morocco',     category: 'Countries',  difficulty: 'medium' },
+  { word: 'Kazakhstan',  category: 'Countries',  difficulty: 'hard' },
+  { word: 'Mozambique',  category: 'Countries',  difficulty: 'hard' },
+  { word: 'Kyrgyzstan',  category: 'Countries',  difficulty: 'hard' },
+
+  // ── Cities ───────────────────────────────────────────────────────────────
+  { word: 'Paris',       category: 'Cities',     difficulty: 'easy' },
+  { word: 'Tokyo',       category: 'Cities',     difficulty: 'easy' },
+  { word: 'New York',    category: 'Cities',     difficulty: 'easy' },
+  { word: 'London',      category: 'Cities',     difficulty: 'easy' },
+  { word: 'Dubai',       category: 'Cities',     difficulty: 'easy' },
+  { word: 'Sydney',      category: 'Cities',     difficulty: 'easy' },
+  { word: 'Rio',         category: 'Cities',     difficulty: 'easy' },
+  { word: 'Cairo',       category: 'Cities',     difficulty: 'medium' },
+  { word: 'Istanbul',    category: 'Cities',     difficulty: 'medium' },
+  { word: 'Nairobi',     category: 'Cities',     difficulty: 'medium' },
+  { word: 'Reykjavik',   category: 'Cities',     difficulty: 'hard' },
+  { word: 'Kathmandu',   category: 'Cities',     difficulty: 'hard' },
+  { word: 'Ulaanbaatar', category: 'Cities',     difficulty: 'hard' },
+
+  // ── Movies ───────────────────────────────────────────────────────────────
+  { word: 'Titanic',     category: 'Movies',     difficulty: 'easy' },
+  { word: 'Avatar',      category: 'Movies',     difficulty: 'easy' },
+  { word: 'Inception',   category: 'Movies',     difficulty: 'easy' },
+  { word: 'Frozen',      category: 'Movies',     difficulty: 'easy' },
+  { word: 'Avengers',    category: 'Movies',     difficulty: 'easy' },
+  { word: 'Jaws',        category: 'Movies',     difficulty: 'easy' },
+  { word: 'Casablanca',  category: 'Movies',     difficulty: 'medium' },
+  { word: 'Parasite',    category: 'Movies',     difficulty: 'medium' },
+  { word: 'Gladiator',   category: 'Movies',     difficulty: 'medium' },
+  { word: 'Metropolis',  category: 'Movies',     difficulty: 'hard' },
+  { word: 'Rashomon',    category: 'Movies',     difficulty: 'hard' },
+
+  // ── Vehicles ─────────────────────────────────────────────────────────────
+  { word: 'Airplane',    category: 'Vehicles',   difficulty: 'easy' },
+  { word: 'Bicycle',     category: 'Vehicles',   difficulty: 'easy' },
+  { word: 'Helicopter',  category: 'Vehicles',   difficulty: 'easy' },
+  { word: 'Submarine',   category: 'Vehicles',   difficulty: 'easy' },
+  { word: 'Train',       category: 'Vehicles',   difficulty: 'easy' },
+  { word: 'Motorcycle',  category: 'Vehicles',   difficulty: 'easy' },
+  { word: 'Sailboat',    category: 'Vehicles',   difficulty: 'medium' },
+  { word: 'Hovercraft',  category: 'Vehicles',   difficulty: 'medium' },
+  { word: 'Zeppelin',    category: 'Vehicles',   difficulty: 'hard' },
+  { word: 'Gondola',     category: 'Vehicles',   difficulty: 'hard' },
+
+  // ── Jobs ─────────────────────────────────────────────────────────────────
+  { word: 'Doctor',      category: 'Jobs',       difficulty: 'easy' },
+  { word: 'Teacher',     category: 'Jobs',       difficulty: 'easy' },
+  { word: 'Pilot',       category: 'Jobs',       difficulty: 'easy' },
+  { word: 'Chef',        category: 'Jobs',       difficulty: 'easy' },
+  { word: 'Astronaut',   category: 'Jobs',       difficulty: 'easy' },
+  { word: 'Firefighter', category: 'Jobs',       difficulty: 'easy' },
+  { word: 'Lawyer',      category: 'Jobs',       difficulty: 'easy' },
+  { word: 'Architect',   category: 'Jobs',       difficulty: 'medium' },
+  { word: 'Surgeon',     category: 'Jobs',       difficulty: 'medium' },
+  { word: 'Diplomat',    category: 'Jobs',       difficulty: 'hard' },
+  { word: 'Actuary',     category: 'Jobs',       difficulty: 'hard' },
+
+  // ── Nature ───────────────────────────────────────────────────────────────
+  { word: 'Volcano',     category: 'Nature',     difficulty: 'easy' },
+  { word: 'Rainbow',     category: 'Nature',     difficulty: 'easy' },
+  { word: 'Glacier',     category: 'Nature',     difficulty: 'easy' },
+  { word: 'Desert',      category: 'Nature',     difficulty: 'easy' },
+  { word: 'Waterfall',   category: 'Nature',     difficulty: 'easy' },
+  { word: 'Tornado',     category: 'Nature',     difficulty: 'easy' },
+  { word: 'Aurora',      category: 'Nature',     difficulty: 'medium' },
+  { word: 'Tsunami',     category: 'Nature',     difficulty: 'medium' },
+  { word: 'Stalagmite',  category: 'Nature',     difficulty: 'hard' },
+  { word: 'Permafrost',  category: 'Nature',     difficulty: 'hard' },
+
+  // ── Places ───────────────────────────────────────────────────────────────
+  { word: 'Airport',     category: 'Places',     difficulty: 'easy' },
+  { word: 'Library',     category: 'Places',     difficulty: 'easy' },
+  { word: 'Hospital',    category: 'Places',     difficulty: 'easy' },
+  { word: 'Stadium',     category: 'Places',     difficulty: 'easy' },
+  { word: 'Museum',      category: 'Places',     difficulty: 'easy' },
+  { word: 'Prison',      category: 'Places',     difficulty: 'easy' },
+  { word: 'Casino',      category: 'Places',     difficulty: 'medium' },
+  { word: 'Observatory', category: 'Places',     difficulty: 'medium' },
+  { word: 'Monastery',   category: 'Places',     difficulty: 'hard' },
+  { word: 'Catacombs',   category: 'Places',     difficulty: 'hard' },
+
+  // ── Science ──────────────────────────────────────────────────────────────
+  { word: 'Telescope',   category: 'Science',    difficulty: 'easy' },
+  { word: 'Magnet',      category: 'Science',    difficulty: 'easy' },
+  { word: 'Atom',        category: 'Science',    difficulty: 'easy' },
+  { word: 'Gravity',     category: 'Science',    difficulty: 'easy' },
+  { word: 'DNA',         category: 'Science',    difficulty: 'medium' },
+  { word: 'Black Hole',  category: 'Science',    difficulty: 'medium' },
+  { word: 'Neutron',     category: 'Science',    difficulty: 'hard' },
+  { word: 'Photosynthesis', category: 'Science', difficulty: 'hard' },
+
+  // ── Household Items ──────────────────────────────────────────────────────
+  { word: 'Mirror',      category: 'Household',  difficulty: 'easy' },
+  { word: 'Umbrella',    category: 'Household',  difficulty: 'easy' },
+  { word: 'Candle',      category: 'Household',  difficulty: 'easy' },
+  { word: 'Scissors',    category: 'Household',  difficulty: 'easy' },
+  { word: 'Hammer',      category: 'Household',  difficulty: 'easy' },
+  { word: 'Blanket',     category: 'Household',  difficulty: 'easy' },
+  { word: 'Hourglass',   category: 'Household',  difficulty: 'medium' },
+  { word: 'Compass',     category: 'Household',  difficulty: 'medium' },
+  { word: 'Thermometer', category: 'Household',  difficulty: 'medium' },
+  { word: 'Abacus',      category: 'Household',  difficulty: 'hard' },
+
+  // ── Games ────────────────────────────────────────────────────────────────
+  { word: 'Chess',       category: 'Games',      difficulty: 'easy' },
+  { word: 'Monopoly',    category: 'Games',      difficulty: 'easy' },
+  { word: 'Poker',       category: 'Games',      difficulty: 'easy' },
+  { word: 'Minecraft',   category: 'Games',      difficulty: 'easy' },
+  { word: 'Tetris',      category: 'Games',      difficulty: 'easy' },
+  { word: 'Scrabble',    category: 'Games',      difficulty: 'medium' },
+  { word: 'Mahjong',     category: 'Games',      difficulty: 'medium' },
+  { word: 'Pachinko',    category: 'Games',      difficulty: 'hard' },
+];
+
+export function getRandomWord(difficulty: 'easy' | 'medium' | 'hard' | 'random' = 'random'): WordEntry {
+  let pool = words;
+  if (difficulty !== 'random') {
+    pool = words.filter(w => w.difficulty === difficulty);
+    if (pool.length === 0) pool = words;
+  }
+  return pool[Math.floor(Math.random() * pool.length)];
+}

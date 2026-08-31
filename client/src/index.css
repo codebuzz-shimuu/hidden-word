@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #0a0a1a;
+    color: #f1f5f9;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(124, 58, 237, 0.5);
+    border-radius: 3px;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+
+  .glass-strong {
+    @apply bg-white/10 backdrop-blur-lg border border-white/15 rounded-2xl;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
+  }
+
+  .text-glow-red {
+    text-shadow: 0 0 20px rgba(220, 38, 38, 0.7);
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark active:scale-95 text-white font-bold py-4 px-8 rounded-xl 
+           transition-all duration-150 text-lg tracking-wide shadow-lg shadow-primary/30
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100;
+  }
+
+  .btn-secondary {
+    @apply bg-white/10 hover:bg-white/20 active:scale-95 text-white font-semibold py-3 px-6 rounded-xl 
+           border border-white/15 transition-all duration-150 text-base;
+  }
+
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 active:scale-95 text-white font-bold py-3 px-6 rounded-xl 
+           transition-all duration-150 shadow-lg shadow-red-900/30;
+  }
+
+  .input-field {
+    @apply bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-white placeholder-white/30
+           focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50
+           transition-all duration-150 w-full text-base;
+  }
+
+  .badge-alive {
+    @apply bg-green-500/20 text-green-400 border border-green-500/30 px-2 py-0.5 rounded-full text-xs font-semibold;
+  }
+
+  .badge-eliminated {
+    @apply bg-red-500/20 text-red-400 border border-red-500/30 px-2 py-0.5 rounded-full text-xs font-semibold;
+  }
+
+  .badge-ready {
+    @apply bg-green-500/20 text-green-400 border border-green-500/30 px-2 py-0.5 rounded-full text-xs font-semibold;
+  }
+
+  .badge-not-ready {
+    @apply bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 px-2 py-0.5 rounded-full text-xs font-semibold;
+  }
+}
+
+/* Animated background */
+.bg-animated {
+  background: radial-gradient(ellipse at 20% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, rgba(109, 40, 217, 0.1) 0%, transparent 50%),
+              #0a0a1a;
+}
+
+/* Pulse ring */
+@keyframes ping-once {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.ping-once {
+  animation: ping-once 0.6s ease-out forwards;
+}
